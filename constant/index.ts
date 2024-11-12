@@ -59,59 +59,76 @@ export const databaseData = [
 
 ];
 //homepage constants
-export const events=[
+export const events = [
     {
-        Date:"date:3rd January 2025",
-        location:"Location:kigali Rwanda",
-        Image:"https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
-       Action:"Action:expo",
-        partipants:"Partipants:Traders",
-        Entrance:"Entrance:1000Rwf",
+        Date: "date:3rd January 2025",
+        location: "Location:kigali Rwanda",
+        Image: "https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
+        Action: "Action:expo",
+        partipants: "Partipants:Traders",
+        Entrance: "Entrance:1000Rwf",
     },
     {
-        Date:"date:3rd January 2025",
-        location:"Location:kigali Rwanda",
-        Image:"https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
-       Action:"Action:expo",
-        partipants:"Partipants:Traders",
-        Entrance:"Entrance:1000Rwf",
+        Date: "date:3rd January 2025",
+        location: "Location:kigali Rwanda",
+        Image: "https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
+        Action: "Action:expo",
+        partipants: "Partipants:Traders",
+        Entrance: "Entrance:1000Rwf",
     },
     {
-        Date:"date:3rd January 2025",
-        location:"Location:kigali Rwanda",
-        Image:"https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
-       Action:"Action:expo",
-        partipants:"Partipants:Traders",
-        Entrance:"Entrance:1000Rwf",
+        Date: "date:3rd January 2025",
+        location: "Location:kigali Rwanda",
+        Image: "https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
+        Action: "Action:expo",
+        partipants: "Partipants:Traders",
+        Entrance: "Entrance:1000Rwf",
     },
-    
+
     {
-        Date:"date:3rd January 2025",
-        location:"Location:kigali Rwanda",
-        Image:"https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
-       Action:"Action:expo",
-        partipants:"Partipants:Traders",
-        Entrance:"Entrance:1000Rwf",
+        Date: "date:3rd January 2025",
+        location: "Location:kigali Rwanda",
+        Image: "https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
+        Action: "Action:expo",
+        partipants: "Partipants:Traders",
+        Entrance: "Entrance:1000Rwf",
     },
-    
-    
+    {
+        Date: "date:3rd January 2025",
+        location: "Location:kigali Rwanda",
+        Image: "https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
+        Action: "Action:expo",
+        partipants: "Partipants:Traders",
+        Entrance: "Entrance:1000Rwf",
+    },
+
+    {
+        Date: "date:3rd January 2025",
+        location: "Location:kigali Rwanda",
+        Image: "https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
+        Action: "Action:expo",
+        partipants: "Partipants:Traders",
+        Entrance: "Entrance:1000Rwf",
+    },
+
+
 
 ];
-export const journey=[
+export const journey = [
     {
-        Image:"https://images.pexels.com/photos/333525/pexels-photo-333525.jpeg",
-        title:"Tourism",
-        content:"Discover Rwanda: Land of a Thousand Hills, Endless Adventure, and Unforgettable Beauty"
+        Image: "https://images.pexels.com/photos/333525/pexels-photo-333525.jpeg",
+        title: "Tourism",
+        content: "Discover Rwanda: Land of a Thousand Hills, Endless Adventure, and Unforgettable Beauty"
     },
     {
-       Image:"https://images.pexels.com/photos/17644052/pexels-photo-17644052/free-photo-of-close-up-of-colorful-handmade-vases.jpeg",
-        title:"Cultural Heritage",
-        content:"Celebrating Rwanda’s Timeless Traditions, Unity, and Vibrant Cultural Spirit"
+        Image: "https://images.pexels.com/photos/17644052/pexels-photo-17644052/free-photo-of-close-up-of-colorful-handmade-vases.jpeg",
+        title: "Cultural Heritage",
+        content: "Celebrating Rwanda’s Timeless Traditions, Unity, and Vibrant Cultural Spirit"
     },
     {
-       Image:"https://images.pexels.com/photos/1707823/pexels-photo-1707823.jpeg",
-        title:"Socioeconomic ",
-        content:"Empowering Communities Through Innovation, Agriculture, and Sustainable Development."
+        Image: "https://images.pexels.com/photos/1707823/pexels-photo-1707823.jpeg",
+        title: "Socioeconomic ",
+        content: "Empowering Communities Through Innovation, Agriculture, and Sustainable Development."
     },
 ];
 
