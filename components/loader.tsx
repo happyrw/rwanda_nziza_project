@@ -5,7 +5,7 @@ import { BallTriangle } from 'react-loader-spinner';
 
 const LoaderComponent = () => {
     return (
-        <div className='fixed top-0 left-0 right-0 bottom-0 bg-white z-10 flex items-center justify-center'>
+        <div className='fixed top-0 left-0 right-0 bottom-0 bg-white z-30 flex items-center justify-center'>
             <BallTriangle
                 height={70}
                 width={70}

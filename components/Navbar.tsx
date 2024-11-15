@@ -35,7 +35,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className='p-2'>
+        <div className='p-2 relative z-10'>
             <div className='bg-slate-300 p-2 flex rounded-xl'>
                 <div className='flex items-center ml-auto gap-3'>
                     {!user ? (
