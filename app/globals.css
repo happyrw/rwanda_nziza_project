@@ -17,13 +17,38 @@ body {
     @apply border-border;
   }
 
+  * {
+    user-select: none;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground max-w-screen-2xl m-auto;
   }
 }
 
 * {
   box-sizing: border-box;
+}
+
+.lakeKivuLarge {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .lakeKivuLarge {
+    display: flex;
+  }
+}
+
+.lakeKivuSmall {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .lakeKivuSmall {
+    display: none;
+  }
 }
 
 /* Tip tap */

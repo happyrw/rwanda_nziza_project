@@ -1,3 +1,4 @@
+
 export const categoryData = [
     { category: "restaurants" },
     { category: "hotels" },
@@ -59,3 +60,39 @@ export const databaseData = [
 
 ];
 
+export const places = [
+    {
+        image: "https://images.pexels.com/photos/220213/pexels-photo-220213.jpeg",
+        name: "Lake Kivu",
+        stars: 5
+    },
+    {
+        image: "https://images.pexels.com/photos/220213/pexels-photo-220213.jpeg",
+        name: "Nyungwe Forest",
+        stars: 5
+    },
+    {
+        image: "https://images.pexels.com/photos/220213/pexels-photo-220213.jpeg",
+        name: "Akagera National Park",
+        stars: 5
+    },
+    {
+        image: "https://images.pexels.com/photos/220213/pexels-photo-220213.jpeg",
+        name: "Lake Kivu Night",
+        stars: 5
+    },
+    {
+        image: "https://images.pexels.com/photos/220213/pexels-photo-220213.jpeg",
+        name: "Mount Kigali",
+        stars: 5
+    }
+];
+
+
+// <div className="flex mt-1" >
+// {
+//     [...Array(place.stars)].map((_, i) => (
+//         <AiFillStar key= { i } className = "text-yellow-500 text-xs" />
+//                                         ))
+// }
+//     </div>
