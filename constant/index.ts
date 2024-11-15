@@ -114,4 +114,31 @@ export const journey=[
         content:"Empowering Communities Through Innovation, Agriculture, and Sustainable Development."
     },
 ];
+export const slides =[
+    {
+       src:"https://images.pexels.com/photos/333525/pexels-photo-333525.jpeg",
+       text:"Kigali city ",
+       tagline:"The Heartbeat of Rwanda: Vibrant, Modern, and Alive."
+    },
+    {
+        src:"https://images.pexels.com/photos/15286713/pexels-photo-15286713/free-photo-of-motorcycles-parked-on-a-street.jpeg",
+        text:"Northern Province",
+        tagline:"Where Mountains Whisper and Nature Thrives."
+     },
+     {
+        src:"https://images.pexels.com/photos/13159316/pexels-photo-13159316.jpeg?",
+        text:"Southern Province ",
+        tagline: "The Cradle of Culture and Historical Legacy."
+     },
+     {
+        src:"https://images.pexels.com/photos/24022781/pexels-photo-24022781/free-photo-of-view-of-the-helsinki-cathedral-from-a-park.jpeg",
+        text:"Eastern Province ",
+        tagline: "Land of Sunshine, Adventure, and Opportunity."
+     },
+     {
+        src:"https://images.pexels.com/photos/19308306/pexels-photo-19308306/free-photo-of-seagulls-and-ferry-on-sea-coast-in-istanbul.jpeg",
+        text:"Western Province ",
+        tagline: "Lakes, Hills, and Unforgettable Serenity."
+     },
+];
 
