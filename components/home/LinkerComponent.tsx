@@ -21,7 +21,7 @@ const LinkerComponent = () => {
               className="relative  flex flex-col card border border-gray-400 w-60 rounded-lg shodow-md mb-3 h-[27rem] transform transition duration-300 hover:scale-105 "
             >
               <div className="flex flex-col gap-2  flex-grow">
-                <div className='bg-gradient-to-r from-[#2E2BDF] to-white p-6" w-10 h-4' />
+                <div className='bg-gradient-to-r from-[#2E2BDF] to-white p-6" w-10 h-4 rounded-lg' />
                 <div className="text-left m-auto mb-2 text-sm font-medium">
                   <p>{post.Action}</p>
                   <h3>{post.Date}</h3>
