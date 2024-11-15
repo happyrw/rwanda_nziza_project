@@ -129,6 +129,7 @@ const LinkerComponent = () => {
       >
         {/* Text content with tagline */}
         <div className="bg-black bg-opacity-50 p-6 rounded-lg w-4/5 max-w-xl text-center">
+        <div className="w-36 h-2 bg-[#2E2BDF]" />
           <h2 className="text-xl md:text-3xl font-bold mb-2">{slide.text}</h2>
           <p className="text-sm md:text-lg mb-4">{slide.tagline}</p>
           <button className="bg-[#2E2BDF] text-white py-2 px-4 rounded-lg font-bold hover:bg-blue-700 transition-all">
