@@ -59,6 +59,89 @@ export const databaseData = [
     // Additional categories follow a similar pattern...
 
 ];
+//homepage constants
+export const events=[
+    {
+        Date:"date:3rd January 2025",
+        location:"Location:kigali Rwanda",
+        Image:"https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
+       Action:"Action:expo",
+        partipants:"Partipants:Traders",
+        Entrance:"Entrance:1000Rwf",
+    },
+    {
+        Date:"date:3rd January 2025",
+        location:"Location:kigali Rwanda",
+        Image:"https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
+       Action:"Action:expo",
+        partipants:"Partipants:Traders",
+        Entrance:"Entrance:1000Rwf",
+    },
+    {
+        Date:"date:3rd January 2025",
+        location:"Location:kigali Rwanda",
+        Image:"https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
+       Action:"Action:expo",
+        partipants:"Partipants:Traders",
+        Entrance:"Entrance:1000Rwf",
+    },
+    
+    {
+        Date:"date:3rd January 2025",
+        location:"Location:kigali Rwanda",
+        Image:"https://images.pexels.com/photos/9009587/pexels-photo-9009587.jpeg",
+       Action:"Action:expo",
+        partipants:"Partipants:Traders",
+        Entrance:"Entrance:1000Rwf",
+    },
+    
+    
+
+];
+export const journey=[
+    {
+        Image:"https://images.pexels.com/photos/333525/pexels-photo-333525.jpeg",
+        title:"Tourism",
+        content:"Discover Rwanda: Land of a Thousand Hills, Endless Adventure, and Unforgettable Beauty"
+    },
+    {
+       Image:"https://images.pexels.com/photos/17644052/pexels-photo-17644052/free-photo-of-close-up-of-colorful-handmade-vases.jpeg",
+        title:"Cultural Heritage",
+        content:"Celebrating Rwanda’s Timeless Traditions, Unity, and Vibrant Cultural Spirit"
+    },
+    {
+       Image:"https://images.pexels.com/photos/1707823/pexels-photo-1707823.jpeg",
+        title:"Socioeconomic ",
+        content:"Empowering Communities Through Innovation, Agriculture, and Sustainable Development."
+    },
+];
+export const slides =[
+    {
+       src:"https://images.pexels.com/photos/333525/pexels-photo-333525.jpeg",
+       text:"Kigali city ",
+       tagline:"The Heartbeat of Rwanda: Vibrant, Modern, and Alive."
+    },
+    {
+        src:"https://images.pexels.com/photos/15286713/pexels-photo-15286713/free-photo-of-motorcycles-parked-on-a-street.jpeg",
+        text:"Northern Province",
+        tagline:"Where Mountains Whisper and Nature Thrives."
+     },
+     {
+        src:"https://images.pexels.com/photos/13159316/pexels-photo-13159316.jpeg?",
+        text:"Southern Province ",
+        tagline: "The Cradle of Culture and Historical Legacy."
+     },
+     {
+        src:"https://images.pexels.com/photos/24022781/pexels-photo-24022781/free-photo-of-view-of-the-helsinki-cathedral-from-a-park.jpeg",
+        text:"Eastern Province ",
+        tagline: "Land of Sunshine, Adventure, and Opportunity."
+     },
+     {
+        src:"https://images.pexels.com/photos/19308306/pexels-photo-19308306/free-photo-of-seagulls-and-ferry-on-sea-coast-in-istanbul.jpeg",
+        text:"Western Province ",
+        tagline: "Lakes, Hills, and Unforgettable Serenity."
+     },
+];
 
 export const places = [
     {
