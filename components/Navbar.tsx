@@ -7,6 +7,7 @@ import LoaderComponent from './loader';
 import { UserAvatar } from './userProfile/avatar';
 import { Button } from './ui/button';
 import { Loader, LogOut } from 'lucide-react';
+import Image from 'next/image';
 
 const Navbar = () => {
     const [loading, setLoading] = useState(true);
@@ -20,6 +21,10 @@ const Navbar = () => {
             redirect: false,
         });
         window.location.reload();
+    };
+
+    const handleClick = () => {
+        window.location.href = "/";
     };
 
     useEffect(() => {
@@ -37,6 +42,14 @@ const Navbar = () => {
     return (
         <div className='p-2 relative z-10'>
             <div className='bg-slate-300 p-2 flex rounded-xl'>
+                <Image
+                    src="/rwanda.png"
+                    alt='logo'
+                    width={250}
+                    height={250}
+                    className='w-[120px] object-cover -mt-2 cursor-pointer'
+                    onClick={handleClick}
+                />
                 <div className='flex items-center ml-auto gap-3'>
                     {!user ? (
                         <>

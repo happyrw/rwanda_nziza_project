@@ -3,7 +3,8 @@
 import { createContext, Dispatch, SetStateAction, useContext, useEffect, useState } from "react";
 import { fetchUserByEmail } from "@/lib/data";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+import { journey } from "@/constant";
 
 interface Location {
     lat: number;
@@ -22,15 +23,20 @@ type StateContextType = {
     setUserLocation: Dispatch<SetStateAction<Location | undefined>>,
     setAddTask: Dispatch<SetStateAction<boolean>>,
     expandedOrderId: number | null,
-    setExpandedOrderId: Dispatch<SetStateAction<number | null>>
+    setExpandedOrderId: Dispatch<SetStateAction<number | null>>;
     selectedBusiness: any;
-    setSelectedBusiness: Dispatch<SetStateAction<any>>
+    setSelectedBusiness: Dispatch<SetStateAction<any>>;
     selectedBusinessId: any[] | undefined;
     setSelectedBusinessId: Dispatch<SetStateAction<any[] | undefined>>;
     businessLocationsName: any[] | undefined;
-    setBusinessLocationsName: Dispatch<SetStateAction<any[] | undefined>>
+    setBusinessLocationsName: Dispatch<SetStateAction<any[] | undefined>>;
     businessItem: any;
-    setBusinessItem: Dispatch<SetStateAction<any | undefined>>
+    setBusinessItem: Dispatch<SetStateAction<any | undefined>>;
+    handleSearch: (e: React.FormEvent<HTMLFormElement>) => void,
+    searchedTerm: string,
+    setSearchedTerm: Dispatch<SetStateAction<string>>,
+    setSearchedItems: Dispatch<SetStateAction<any[]>>,
+    searchedItems: any[]
 };
 const context = createContext<StateContextType | undefined>(undefined);
 
@@ -45,9 +51,13 @@ export const StateContext = ({ children }: { children: React.ReactNode }) => {
     const [selectedBusinessId, setSelectedBusinessId] = useState<any[]>()
     const [businessLocationsName, setBusinessLocationsName] = useState<any[]>()
     const [businessItem, setBusinessItem] = useState<any>();
+    const [searchedTerm, setSearchedTerm] = useState<string>("");
+    const [searchedItems, setSearchedItems] = useState<any[]>([]);
+
 
     const { data: Session } = useSession();
     const router = useRouter();
+    const searchParams = useSearchParams();
 
     const getUser = async (session: any) => {
         try {
@@ -108,35 +118,75 @@ export const StateContext = ({ children }: { children: React.ReactNode }) => {
         }
     }, [businessLocations, businessLocation]);
 
+    // 
+    // Update search term and URL
+    const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        if (searchedTerm.trim()) {
+            // Update the URL with the search query
+            const params = new URLSearchParams(searchParams.toString());
+            params.set("query", searchedTerm);
+            router.push(`/?${params.toString()}`);
+        }
+    };
+
+    // Filter journeys based on the search term
+    const filterJourneys = (term: string) => {
+        const filtered = journey.filter((item) =>
+            item.title.toLowerCase().includes(term.toLowerCase())
+        );
+        setSearchedItems(filtered);
+    };
+
+    // Load results from query string on mount or when it changes
+    useEffect(() => {
+        const query = searchParams.get("query");
+        if (query) {
+            setSearchedTerm(query);
+            filterJourneys(query);
+        } else {
+            setSearchedItems(journey); // Reset to original list if no query
+        }
+    }, [searchParams]);
+
+    // 
+
     if (user && Session && !user?.username) {
         router.push("/onboarding");
     };
 
+    const value = {
+        user,
+        setUser,
+        addTask,
+        setAddTask,
+        expandedOrderId,
+        setExpandedOrderId,
+        userLocation,
+        setUserLocation,
+        businessLocation,
+        setBusinessLocation,
+        businessLocations,
+        setBusinessLocations,
+        selectedBusiness,
+        setSelectedBusiness,
+        businessLocationsName,
+        setBusinessLocationsName,
+        selectedBusinessId,
+        setSelectedBusinessId,
+        businessItem,
+        setBusinessItem,
+        handleSearch,
+        searchedTerm,
+        setSearchedTerm,
+        setSearchedItems,
+        searchedItems
+    }
+
 
     return (
         <context.Provider
-            value={{
-                user,
-                setUser,
-                addTask,
-                setAddTask,
-                expandedOrderId,
-                setExpandedOrderId,
-                userLocation,
-                setUserLocation,
-                businessLocation,
-                setBusinessLocation,
-                businessLocations,
-                setBusinessLocations,
-                selectedBusiness,
-                setSelectedBusiness,
-                businessLocationsName,
-                setBusinessLocationsName,
-                selectedBusinessId,
-                setSelectedBusinessId,
-                businessItem,
-                setBusinessItem
-            }}
+            value={value}
         >
             {children}
         </context.Provider>
@@ -150,3 +200,4 @@ export const useStateContext = () => {
     }
     return ctx;
 };
+

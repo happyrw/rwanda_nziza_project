@@ -17,7 +17,7 @@ const MainBottom = () => {
         elementRef.scrollLeft -= 500;
     };
     return (
-        <div className='relative pb-32 pt-32 -bottom-10'>
+        <div className='relative pb-16 md:pb-32 pt-16 md:pt-32 -bottom-10'>
             <Image src="https://images.pexels.com/photos/7316957/pexels-photo-7316957.jpeg" alt="" fill className='object-cover' />
 
             <div className="lakeKivuLarge items-center md:px-2 lg:px-20">
