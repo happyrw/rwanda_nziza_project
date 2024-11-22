@@ -111,7 +111,7 @@ export const journey = [
     },
     {
         Image: "https://images.pexels.com/photos/1707823/pexels-photo-1707823.jpeg",
-        title: "Socioeconomic ",
+        title: "Sociol economic ",
         content: "Empowering Communities Through Innovation, Agriculture, and Sustainable Development."
     },
 ];
@@ -171,3 +171,25 @@ export const places = [
         stars: 5
     }
 ];
+export const Testimonial = [
+    {
+        image: "https://images.pexels.com/photos/1181412/pexels-photo-1181412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"KANBANYANA Cecile",
+        testimonial: "Discover the serene lakes of this region, each offering a unique blend of natural beauty and tranquility. Perfect for nature lovers and explorers, these lakes invite peaceful reflections and Discover the serene lakes of this region, each offering a unique blend of natural beauty and tranquility.",
+    },
+    {
+        image: "https://images.pexels.com/photos/1756275/pexels-photo-1756275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"KANBANYANA Cecile",
+        testimonial: "Discover the serene lakes of this region, each offering a unique blend of natural beauty and tranquility. Perfect for nature lovers and explorers, these lakes invite peaceful reflections and Discover the serene lakes of this region, each offering a unique blend of natural beauty and tranquility.",
+    },
+    {
+        image: "https://images.pexels.com/photos/1181412/pexels-photo-1181412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"KANBANYANA Cecile",
+        testimonial: "Discover the serene lakes of this region, each offering a unique blend of natural beauty and tranquility. Perfect for nature lovers and explorers, these lakes invite peaceful reflections and Discover the serene lakes of this region, each offering a unique blend of natural beauty and tranquility.",
+    },
+    {
+        image: "https://images.pexels.com/photos/1756275/pexels-photo-1756275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"KANBANYANA Cecile",
+        testimonial: "Discover the serene lakes of this region, each offering a unique blend of natural beauty and tranquility. Perfect for nature lovers and explorers, these lakes invite peaceful reflections and Discover the serene lakes of this region, each offering a unique blend of natural beauty and tranquility.",
+    },
+]
